@@ -3,10 +3,11 @@ import {Dimensions} from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-export const customWidth = (wd:any) => {
+//Custom width and CustomHeight help in making the UI components responsive
+export const customWidth = (wd: any) => {
   return Math.floor((wd * windowWidth) / 465);
 };
-export const customHeight = (hg:any) => {
+export const customHeight = (hg: any) => {
   return Math.floor((hg * windowHeight) / 1037);
 };
 export const shadowStyles = {

@@ -98,7 +98,7 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
   };
 
   useEffect(() => {
-  //If the file is already in local storage, the network request wont be made. Instead, the sound will be played from the device itself
+    //If the file is already in local storage, the network request wont be made. Instead, the sound will be played from the device itself
 
     let path = RNFetchBlob.fs.dirs.DownloadDir + `/` + `rain` + `.mp3`;
     RNFetchBlob.fs

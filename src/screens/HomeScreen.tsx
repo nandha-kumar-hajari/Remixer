@@ -32,14 +32,16 @@ type ContextType = {
 export const HomeScreen: React.FC = () => {
   const [showButtons, setShowButtons] = useState(false);
   const translateY = useSharedValue(0);
-  const [playCloudAnimation, setPlayCloudAnimation] = useState(false);
+
+  //This function requests device storage permissoin to save the audio file in local storage
   const requestToPermissions = async () => {
     try {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
         {
           title: 'Remixer',
-          message: 'This App needs access to your save the audio files.Please enable it from settings.',
+          message:
+            'This App needs access to your save the audio files.Please enable it from settings.',
           buttonNegative: 'Cancel',
           buttonPositive: 'OK',
         },
@@ -48,7 +50,7 @@ export const HomeScreen: React.FC = () => {
         setShowButtons(true);
       }
     } catch (err) {
-      console.log("permission error",err);
+      console.log('permission error', err);
     }
   };
 
@@ -56,6 +58,7 @@ export const HomeScreen: React.FC = () => {
     requestToPermissions();
   }, []);
 
+  //This Pan gesture event handles makes the rain icon draggable along the Y-Axis.
   const panGestureEvent = useAnimatedGestureHandler<
     PanGestureHandlerGestureEvent,
     ContextType
@@ -90,8 +93,7 @@ export const HomeScreen: React.FC = () => {
   });
   return (
     //Main view is wrapped in gesture handler root view to support animated drag of button
-    <GestureHandlerRootView
-      style={Style.mainViewStyle}>
+    <GestureHandlerRootView style={Style.mainViewStyle}>
       <>
         <View style={Style.cloudViewWrap}>
           {/* Lottieview is used for smooth,performant and high quality animations */}
