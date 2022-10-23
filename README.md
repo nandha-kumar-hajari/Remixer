@@ -15,10 +15,10 @@
 
 | Package | Source |
 | ------ | ------ |
-| Lottie | [https://www.npmjs.com/package/lottie-react-native][PlDb] |
-| Reanimated | [https://www.npmjs.com/package/react-native-reanimated][PlGh] |
-| Sound | [https://www.npmjs.com/package/react-native-sound][PlGd] |
-| Indicators | [https://www.npmjs.com/package/react-native-indicators][PlOd] |
+| Lottie | [https://www.npmjs.com/package/lottie-react-native] |
+| Reanimated | [https://www.npmjs.com/package/react-native-reanimated] |
+| Sound | [https://www.npmjs.com/package/react-native-sound] |
+| Indicators | [https://www.npmjs.com/package/react-native-indicators]|
 
 
 
