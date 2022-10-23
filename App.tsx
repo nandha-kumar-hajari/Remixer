@@ -1,12 +1,11 @@
-import {View, Text, PermissionsAndroid} from 'react-native';
-import React, {useEffect, useState} from 'react';
+
+import React from 'react';
+import { LogBox } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
+LogBox.ignoreAllLogs()
 
 export const App: React.FC = () => {
 
-
-  useEffect(() => {
-  }, []);
   return <HomeScreen />;
 };
 

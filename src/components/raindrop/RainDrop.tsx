@@ -41,7 +41,7 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
       });
   };
 
-  //For the first time when user opens the app, audio will be played from remote server and file will be save to local storage
+  //For the first time when user opens the app, audio will be played from remote server and file will be saved to local storage
   const readFileFromServer = () => {
     setLoading(true);
     var audio = new Sound(
