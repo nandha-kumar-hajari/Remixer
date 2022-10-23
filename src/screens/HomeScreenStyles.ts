@@ -9,13 +9,15 @@ import {
   
   interface Style{
     mainViewStyle:ViewStyle,
-    bottomViewStyle:ViewStyle
+    bottomViewStyle:ViewStyle,
+    iconStyle:ViewStyle,
+    titleStyle:TextStyle,
+    cloudViewWrap:ViewStyle
   }
 
   export default StyleSheet.create<Style>({
     mainViewStyle:{
-        flex:1,
-        backgroundColor:'#f2f2f2'
+      flex: 1, alignItems: 'center', backgroundColor: '#f2f2f2'
     },
     bottomViewStyle:{
       position: 'absolute',
@@ -26,8 +28,26 @@ import {
       flexDirection:'row',
       justifyContent:'space-evenly',
       alignItems:'flex-end',
-      // backgroundColor:'red',
       paddingBottom:customWidth(40),
+    }
+    ,
+    iconStyle: {
+    },
+    titleStyle:{
+        fontFamily: 'Poppins-Bold',
+        fontSize: 24,
+        color: '#2F333B',
+        alignSelf: 'center',
+        paddingTop: customHeight(200),
+        position: 'absolute',
+        zIndex: 3,
+    },
+    cloudViewWrap:{
+      zIndex: 2,
+      alignSelf: 'center',
+      position: 'absolute',
+      height: customWidth(420),
+      width: customWidth(380),
     }
   })
 

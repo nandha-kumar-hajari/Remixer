@@ -4,18 +4,21 @@ import {DropIcon, DropTransIcon} from '../../assets/images';
 import {customWidth} from '../Styles';
 import RNFetchBlob from 'rn-fetch-blob';
 import {MaterialIndicator} from 'react-native-indicators';
+import Style from './RainDropStyle';
 
+//Usede react-native-sound library to play sounds from network or local storage
 var Sound = require('react-native-sound');
 
 Sound.setCategory('Playback');
 
-interface RainDropProps {}
+export interface RainDropProps {}
 
 export const RainDrop: React.FC = ({}: RainDropProps) => {
   const [playing, setPlaying] = useState();
   const [loading, setLoading] = useState(false);
   const [music, setMusic] = useState();
 
+  //if the file is not in local storage the download will be started
   const startDownload = () => {
     let url = 'https://www.mboxdrive.com/Rain for Deep Sleep.mp3';
     let name = 'rain';
@@ -38,6 +41,7 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
       });
   };
 
+  //For the first time when user opens the app, audio will be played from remote server and file will be save to local storage
   const readFileFromServer = () => {
     setLoading(true);
     var audio = new Sound(
@@ -94,6 +98,8 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
   };
 
   useEffect(() => {
+  //If the file is already in local storage, the network request wont be made. Instead, the sound will be played from the device itself
+
     let path = RNFetchBlob.fs.dirs.DownloadDir + `/` + `rain` + `.mp3`;
     RNFetchBlob.fs
       .readFile(path, 'base64')
@@ -102,7 +108,7 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
         readFileFromLocal();
       })
       .catch(err => {
-        console.log('read file error', err);
+        console.log('read file error rd screen', err);
         readFileFromServer();
       });
 
@@ -111,6 +117,7 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
     };
   }, []);
 
+  //Playing and pausing the audio will be triggered here
   const playPause = () => {
     if (music.isPlaying()) {
       music.pause();
@@ -132,41 +139,21 @@ export const RainDrop: React.FC = ({}: RainDropProps) => {
   return (
     <TouchableOpacity
       onPress={playPause}
-      // style={{backgroundColor: playing ? 'red' : 'black'}}
       disabled={loading}
       style={{
-        backgroundColor: playing ? 'black' : 'transparent',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: customWidth(60),
-        width: customWidth(60),
-        borderRadius: 100,
+        ...Style.touchableViewStyle,
+        backgroundColor: playing ? '#3F8FEF' : 'transparent',
+        marginBottom: playing ? customWidth(40) : 0,
       }}>
       <>
         {playing ? (
-          <Image
-            source={DropTransIcon}
-            style={{
-              height: customWidth(30),
-              width: customWidth(30),
-              position: 'absolute',
-              zIndex: 3,
-            }}
-          />
+          <Image source={DropTransIcon} style={Style.iconStyle} />
         ) : (
           <>
             {loading ? (
               <MaterialIndicator trackWidth={3} size={50} color="white" />
             ) : null}
-            <Image
-              source={DropIcon}
-              style={{
-                height: customWidth(30),
-                width: customWidth(30),
-                position: 'absolute',
-                zIndex: 3,
-              }}
-            />
+            <Image source={DropIcon} style={Style.iconStyle} />
           </>
         )}
       </>
