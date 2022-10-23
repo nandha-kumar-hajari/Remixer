@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/animations/bluewave.json",
+      "sha1": "625421e887b23137e628c4b50a77f5e8808f5682"
+    },
+    {
+      "path": "src/assets/animations/index.ts",
+      "sha1": "a03acf261efcf5104a58844ec114485fd12b8aca"
+    },
+    {
+      "path": "src/assets/animations/seawave.json",
+      "sha1": "1f69d2911840663e346ab2da7e18240aa68b6d4e"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "src/assets/images/cloud.png",
+      "sha1": "1b7008f3f75e460f9c95ebffba52c9538f337629"
+    },
+    {
+      "path": "src/assets/images/drop.png",
+      "sha1": "ba2dbb0e22e0a8710d25c6b2ca237a231054a3b9"
+    },
+    {
+      "path": "src/assets/images/index.ts",
+      "sha1": "f3c6238cd9a85bf33eedd2e47ca0c295493e1dc0"
+    },
+    {
+      "path": "src/assets/images/rainbow.png",
+      "sha1": "290ab48baf3924672e3cf621917a4a4049cfddba"
+    },
+    {
+      "path": "src/assets/images/thunder.png",
+      "sha1": "563db481688573be3bf9f0287f3f54c2dbb84912"
+    }
+  ]
+}

@@ -12,8 +12,20 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4B96FE1F0E764743B98AD1AF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87940E725F8C47D9847FF656 /* Poppins-Light.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Remixer-RemixerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Remixer-RemixerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8CC2E703FF284DDD87FD1B40 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68C7A958C9AC4E99A1C3CB22 /* Poppins-SemiBold.ttf */; };
+		AA8EB83B74584EEFA3DA1427 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C5D3AA646ED4973A10890F7 /* Poppins-Regular.ttf */; };
+		B4A3EC66FA7744D78780D449 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F81EFD58748D5B0B9714B /* Poppins-Bold.ttf */; };
+		9E611DAF71BA4AD082303CB5 /* seawave.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E591A2B559A495BAB548E9B /* seawave.json */; };
+		C6A348886EA448F28F58FE0A /* bluewave.json in Resources */ = {isa = PBXBuildFile; fileRef = 69B7A8F1FB714B13A3973935 /* bluewave.json */; };
+		E1E3438FC1D54D9783B9D8AE /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = 810A6D1D63904CCD974D5507 /* index.ts */; };
+		5C44730CA8984DEB9C4C3168 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F01AF00CFC48E8851CC178 /* cloud.png */; };
+		F38E43C0207B49198B24B17C /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F72FBC135441BB86A78D27 /* drop.png */; };
+		80EBC5FB64044065AF7E13AB /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = AB29713BCD37458FA4FC620B /* index.ts */; };
+		328511430EBB4CC08821AAA0 /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 21782FBC6E654B9BA8991405 /* rainbow.png */; };
+		E57C77DCBFAD439AADCA406A /* thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = DCBFB8F4EC264AC085256CD2 /* thunder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +49,25 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Remixer/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Remixer/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Remixer-RemixerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remixer-RemixerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5D3AA646ED4973A10890F7 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Remixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remixer.debug.xcconfig"; path = "Target Support Files/Pods-Remixer/Pods-Remixer.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Remixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remixer.release.xcconfig"; path = "Target Support Files/Pods-Remixer/Pods-Remixer.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Remixer-RemixerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remixer-RemixerTests.debug.xcconfig"; path = "Target Support Files/Pods-Remixer-RemixerTests/Pods-Remixer-RemixerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Remixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remixer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C7A958C9AC4E99A1C3CB22 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Remixer/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87940E725F8C47D9847FF656 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Remixer-RemixerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remixer-RemixerTests.release.xcconfig"; path = "Target Support Files/Pods-Remixer-RemixerTests/Pods-Remixer-RemixerTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD2F81EFD58748D5B0B9714B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		4E591A2B559A495BAB548E9B /* seawave.json */ = {isa = PBXFileReference; name = "seawave.json"; path = "../src/assets/animations/seawave.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		69B7A8F1FB714B13A3973935 /* bluewave.json */ = {isa = PBXFileReference; name = "bluewave.json"; path = "../src/assets/animations/bluewave.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		810A6D1D63904CCD974D5507 /* index.ts */ = {isa = PBXFileReference; name = "index.ts"; path = "../src/assets/animations/index.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F9F01AF00CFC48E8851CC178 /* cloud.png */ = {isa = PBXFileReference; name = "cloud.png"; path = "../src/assets/images/cloud.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8F72FBC135441BB86A78D27 /* drop.png */ = {isa = PBXFileReference; name = "drop.png"; path = "../src/assets/images/drop.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB29713BCD37458FA4FC620B /* index.ts */ = {isa = PBXFileReference; name = "index.ts"; path = "../src/assets/images/index.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21782FBC6E654B9BA8991405 /* rainbow.png */ = {isa = PBXFileReference; name = "rainbow.png"; path = "../src/assets/images/rainbow.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCBFB8F4EC264AC085256CD2 /* thunder.png */ = {isa = PBXFileReference; name = "thunder.png"; path = "../src/assets/images/thunder.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +146,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				FCE06E5475BD4E02B797FC77 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +171,26 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-Remixer-RemixerTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCE06E5475BD4E02B797FC77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD2F81EFD58748D5B0B9714B /* Poppins-Bold.ttf */,
+				87940E725F8C47D9847FF656 /* Poppins-Light.ttf */,
+				1C5D3AA646ED4973A10890F7 /* Poppins-Regular.ttf */,
+				68C7A958C9AC4E99A1C3CB22 /* Poppins-SemiBold.ttf */,
+				4E591A2B559A495BAB548E9B /* seawave.json */,
+				69B7A8F1FB714B13A3973935 /* bluewave.json */,
+				810A6D1D63904CCD974D5507 /* index.ts */,
+				F9F01AF00CFC48E8851CC178 /* cloud.png */,
+				C8F72FBC135441BB86A78D27 /* drop.png */,
+				AB29713BCD37458FA4FC620B /* index.ts */,
+				21782FBC6E654B9BA8991405 /* rainbow.png */,
+				DCBFB8F4EC264AC085256CD2 /* thunder.png */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +289,18 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B4A3EC66FA7744D78780D449 /* Poppins-Bold.ttf in Resources */,
+				4B96FE1F0E764743B98AD1AF /* Poppins-Light.ttf in Resources */,
+				AA8EB83B74584EEFA3DA1427 /* Poppins-Regular.ttf in Resources */,
+				8CC2E703FF284DDD87FD1B40 /* Poppins-SemiBold.ttf in Resources */,
+				9E611DAF71BA4AD082303CB5 /* seawave.json in Resources */,
+				C6A348886EA448F28F58FE0A /* bluewave.json in Resources */,
+				E1E3438FC1D54D9783B9D8AE /* index.ts in Resources */,
+				5C44730CA8984DEB9C4C3168 /* cloud.png in Resources */,
+				F38E43C0207B49198B24B17C /* drop.png in Resources */,
+				80EBC5FB64044065AF7E13AB /* index.ts in Resources */,
+				328511430EBB4CC08821AAA0 /* rainbow.png in Resources */,
+				E57C77DCBFAD439AADCA406A /* thunder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
