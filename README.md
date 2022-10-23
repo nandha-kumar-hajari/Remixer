@@ -1,5 +1,5 @@
 # Remixer
-## Build using React-Native
+## Build using React-Native & Typescript
 
 ## Installation
 
