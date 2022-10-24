@@ -19,6 +19,7 @@
 | Reanimated | [https://www.npmjs.com/package/react-native-reanimated] |
 | Sound | [https://www.npmjs.com/package/react-native-sound] |
 | Indicators | [https://www.npmjs.com/package/react-native-indicators]|
+| RNFetchBlob | [https://github.com/joltup/rn-fetch-blob]|
 
 
 
